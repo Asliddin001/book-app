@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>Bookshelf Apps</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/book.svg" alt="book" />
+      <h1>BOOKSHELF APPS</h1>
+    </header>
+
+    <div class="wrapper">
+      <div class="container add-book">
+        <form action="#" id="form" class="form">
+          <p>
+            Do you know the difference between a book and you?<br />If a book is
+            stored on a shelf, you are stored in my heart
+            <i class="fas fa-heart"></i>
+          </p>
+          <div class="form-group">
+            <input id="title" class="input" type="text" required />
+            <div class="title"></div>
+            <label for="title" class="placeholder">Title</label>
+          </div>
+          <div class="form-group">
+            <input id="author" class="input" type="text" required />
+            <div class="title title-1"></div>
+            <label for="author" class="placeholder">Author</label>
+          </div>
+          <div class="form-group">
+            <input id="year" class="input" type="number" required />
+            <div class="title title-2"></div>
+            <label for="year" class="placeholder">Year</label>
+          </div>
+          <input
+            type="submit"
+            value="Add Book"
+            name="submit"
+            class="btn-submit"
+          />
+        </form>
+      </div>
+
+      <div class="container library">
+        <div class="search-box">
+          <input
+            id="searchbook"
+            class="search-txt"
+            type="text"
+            name=""
+            placeholder="Search Books..."
+          />
+          <a href="#" class="search-btn">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+        <div class="row">
+          <h2>Not Yet Finished Reading</h2>
+          <div class="list-book" id="uncompleted"></div>
+        </div>
+        <div class="row">
+          <h2>Finished Reading</h2>
+          <div class="list-book" id="completed"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Hand-crafted With <i class="fas fa-heart"></i> By
+        <a href="https://github.com/madfauzy" target="_blank">Ahmad Fauzy</a>
+      </p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  </body>
+</html>
